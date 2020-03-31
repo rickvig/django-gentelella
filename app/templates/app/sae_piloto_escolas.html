@@ -1,0 +1,407 @@
+{% extends "app/base_site.html" %}
+
+{% block title %} Widgets {% endblock title %}
+
+{% block stylesheets %}
+{{ block.super }}
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="right_col" role="main">
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <a href="sae_piloto_geral.html">
+          <h3><i class="fa fa-angle-right"></i> Avaliação Educacional - Edição 2020 SAE Projeto Piloto Guarapuava</h3>
+        </a>
+        <h2>5° Ano Ensino Fundamental - Português</h2>
+      </div>
+
+      <div class="title_right">
+        <div class="col-md-7 col-sm-7 col-xs-12 form-group pull-right top_search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Pesquisar...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">OK!</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      Abaixo do Básico: #d3ebde
+      Básico: #92d1b8
+      Adequado: #57bf9a
+      Avançado: #38b07f -->
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="">
+          <div class="x_content">
+            <div class="row">
+
+              <div class="animated flipInY col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="tile-stats" style="background-color: #57bf9a; color: white">
+                  <div class="icon"><i class="fa fa-star-half-o" style="color: white"></i>
+                  </div>
+                  <div class="count">327,3</div>
+                  <a href="#">
+                    <h3 style="color: white">Português <i class="fa fa-link"></i></h3>
+                  </a>
+                  <p>Avaliação: <b>Adequado</b></p>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2><i>Ranking</i> de desempenho</b></h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="ranking-portugues" style="height:370px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Padrão de desempenho</b></h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="desempenho-portugues" style="height:370px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Table design <small>Custom design</small></h2>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="x_content">
+
+                    <p>Add class <code>bulk_action</code> to table for bulk actions options on row select</p>
+
+                    <div class="table-responsive">
+                      <table class="table table-striped jambo_table bulk_action">
+                        <thead>
+                          <tr class="headings">
+                            <th>
+                              <input type="checkbox" id="check-all" class="flat">
+                            </th>
+                            <th class="column-title">Escola </th>
+                            <th class="column-title">Proficiência média </th>
+                            <th class="column-title">Desvio padrão </th>
+                            <th class="column-title">Nº Previsto de estudantes </th>
+                            <th class="column-title">Nº Efetivo de estudantes </th>
+                            <th class="column-title">Participação </th>
+                            <th class="column-title">0 – 225 </th>
+                            <th class="column-title">225 – 300 </th>
+                            <th class="column-title">300 – 350 </th>
+                            <th class="column-title">350 - 500 </th>
+                            <th class="column-title no-link last"><span class="nobr">Action</span>
+                            </th>
+                            <th class="bulk-actions" colspan="7">
+                              <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span
+                                  class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <style>
+                          table {
+                            color: black !important;
+                          }
+
+                          .abaixo {
+                            background-color: #d3ebde;
+                          }
+
+                          .baixo {
+                            background-color: #92d1b8;
+                          }
+
+                          .adequado {
+                            background-color: #57bf9a;
+                          }
+
+                          .avancado {
+                            background-color: #38b07f;
+                          }
+                        </style>
+
+                        <tbody>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 12</td>
+                            <td class="text-right abaixo">257,4</td>
+                            <td class="text-right">- </td>
+                            <td class="text-right">11</td>
+                            <td class="text-right">1 </td>
+                            <td class="text-right">9,09% </td>
+                            <td class="text-right abaixo">0 </td>
+                            <td class="text-right baixo">100 </td>
+                            <td class="text-right adequado">0 </td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 11</td>
+                            <td class="text-right abaixo">204,9</td>
+                            <td class="text-right">34</td>
+                            <td class="text-right">13</td>
+                            <td class="text-right">9</td>
+                            <td class="text-right">69,23%</td>
+                            <td class="text-right abaixo">68,8</td>
+                            <td class="text-right baixo">31,3</td>
+                            <td class="text-right adequado">0</td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 6</td>
+                            <td class="text-right  abaixo">206,6</td>
+                            <td class="text-right">44 </td>
+                            <td class="text-right">16</td>
+                            <td class="text-right">14</td>
+                            <td class="text-right">87,50% </td>
+                            <td class="text-right abaixo">68 </td>
+                            <td class="text-right baixo">30 </td>
+                            <td class="text-right adequado">2 </td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 8</td>
+                            <td class="text-right  abaixo">211,5</td>
+                            <td class="text-right">40 </td>
+                            <td class="text-right">12</td>
+                            <td class="text-right">10</td>
+                            <td class="text-right">83,33% </td>
+                            <td class="text-right abaixo">63 </td>
+                            <td class="text-right baixo">35,6 </td>
+                            <td class="text-right adequado">1,4 </td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 2</td>
+                            <td class="text-right  abaixo">214,2</td>
+                            <td class="text-right">48,5 </td>
+                            <td class="text-right">12</td>
+                            <td class="text-right">10</td>
+                            <td class="text-right">83,33% </td>
+                            <td class="text-right abaixo">63,2 </td>
+                            <td class="text-right baixo">31,6 </td>
+                            <td class="text-right adequado">5,3 </td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 1</td>
+                            <td class="text-right  abaixo">218,7</td>
+                            <td class="text-right">41,3 </td>
+                            <td class="text-right">13</td>
+                            <td class="text-right">11</td>
+                            <td class="text-right">84,62% </td>
+                            <td class="text-right abaixo">52 </td>
+                            <td class="text-right baixo">46 </td>
+                            <td class="text-right adequado">2 </td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 7</td>
+                            <td class="text-right  abaixo">219,5</td>
+                            <td class="text-right">34 </td>
+                            <td class="text-right">15</td>
+                            <td class="text-right">12</td>
+                            <td class="text-right">80,00% </td>
+                            <td class="text-right abaixo">51,6 </td>
+                            <td class="text-right baixo">48,4 </td>
+                            <td class="text-right adequado">0 </td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 10</td>
+                            <td class="text-right abaixo">223,6</td>
+                            <td class="text-right">51,2 </td>
+                            <td class="text-right">14</td>
+                            <td class="text-right">14</td>
+                            <td class="text-right">100,00% </td>
+                            <td class="text-right abaixo">57,4 </td>
+                            <td class="text-right baixo">29,5 </td>
+                            <td class="text-right adequado">11,5 </td>
+                            <td class="text-right avancado">1,6</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 9</td>
+                            <td class="text-right  abaixo">229,1</td>
+                            <td class="text-right">38,5 </td>
+                            <td class="text-right">20</td>
+                            <td class="text-right">18</td>
+                            <td class="text-right">90,00% </td>
+                            <td class="text-right abaixo">50 </td>
+                            <td class="text-right baixo">50 </td>
+                            <td class="text-right adequado">0 </td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 4</td>
+                            <td class="text-right  abaixo">230,8</td>
+                            <td class="text-right">41,9 </td>
+                            <td class="text-right">16</td>
+                            <td class="text-right">15</td>
+                            <td class="text-right">93,75% </td>
+                            <td class="text-right abaixo">42,4 </td>
+                            <td class="text-right baixo">52,2 </td>
+                            <td class="text-right adequado">5,4 </td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 5</td>
+                            <td class="text-right  abaixo">240,4</td>
+                            <td class="text-right">50,3 </td>
+                            <td class="text-right">15</td>
+                            <td class="text-right">14</td>
+                            <td class="text-right">93,33% </td>
+                            <td class="text-right abaixo">40,5 </td>
+                            <td class="text-right baixo">44 </td>
+                            <td class="text-right adequado">14,3 </td>
+                            <td class="text-right avancado">1,2</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" ">Escola 3</td>
+                            <td class="text-right  abaixo">248,1</td>
+                            <td class="text-right">29,3 </td>
+                            <td class="text-right">13</td>
+                            <td class="text-right">13</td>
+                            <td class="text-right">100,00% </td>
+                            <td class="text-right abaixo">0 </td>
+                            <td class="text-right baixo">100 </td>
+                            <td class="text-right adequado">0 </td>
+                            <td class="text-right avancado">0</td>
+                            <td class="text-center last"><a href="#"><i class="fa fa-eye"></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="title_left">
+                <h3>Detalhe da Escola 7</h3>
+              </div>
+
+              <div class="col-md-3 col-sm-12 col-xs-12">
+                <h2>Desempenho</h2>
+                <h2>219,5</h2>
+                <h4><span class="label" style="background-color: #d3ebde;">Abaixo do Básico</span></h4>
+                <span id="escola11" style="height: 160px;">
+                  <canvas width="300" height="60"
+                    style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                </span>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+              </div>
+              <div class="col-md-3 col-sm-12 col-xs-12">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+{% block javascripts %}
+{{ block.super }}
+<!-- ECharts -->
+<script src="/static/vendors/echarts/dist/echarts.min.js"></script>
+<!-- Chart.js
+  <script src="/static/vendors/Chart.js/dist/Chart.min.js"></script> -->
+<!-- jQuery Sparklines -->
+<script src="/static/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- easy-pie-chart -->
+<script src="/static/vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+{% endblock javascripts %}

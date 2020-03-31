@@ -1,0 +1,187 @@
+{% extends "app/base_site.html" %}
+
+{% block title %} Widgets {% endblock title %}
+
+{% block stylesheets %}
+{{ block.super }}
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="right_col" role="main">
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3>Avaliação Educacional - Edição 2020 SAE Projeto Piloto Guarapuava</h3>
+      </div>
+
+      <div class="title_right">
+        <div class="col-md-7 col-sm-7 col-xs-12 form-group pull-right top_search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abaixo do Básico: #d3ebde
+      Básico: #92d1b8
+      Adequado: #57bf9a
+      Avançado: #38b07f -->
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="">
+          <div class="x_content">
+            <div class="row">
+
+              <div class="animated flipInY col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="tile-stats" style="background-color: #57bf9a; color: white">
+                  <div class="icon"><i class="fa fa-star-half-o" style="color: white"></i>
+                  </div>
+                  <div class="count">317,3</div>
+                  <a href="#">
+                    <h3 style="color: white">Geral Português <i class="fa fa-link"></i></h3>
+                  </a>
+                  <p>Avaliação: <b>Adequado</b></p>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="tile-stats" style="background-color: #92d1b8; color: white">
+                  <div class="icon"><i class="fa fa-star-o" style="color: white"></i>
+                  </div>
+                  <div class="count">226,9</div>
+                  <a href="#">
+                    <h3 style="color: white">Geral Matemática <i class="fa fa-link"></i></h3>
+                  </a>
+                  <p>Avaliação: <b>Básico</b></p>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="row">
+
+                <div class="col-md-6 col-xs-12 ">
+                  <div class="x_panel">
+
+                    <div class="x_title">
+                      <h2>5° Ano Ensino Fundamental </h2>
+                      <div class="clearfix"></div>
+                    </div>
+
+                    <div class="x_content" style="text-align: center;">
+
+                      <div class="row">
+
+                        <div class="col-md-6 col-xs-12 ">
+                          <h1>327,3 <i class="fa fa-star-half-o"></i></h1>
+                          <a href="sae_piloto_escolas.html">
+                            <h3>Português <i class="fa fa-link"></i></h3>
+                          </a>
+                          <h4><span class="label" style="background-color: #57bf9a;">Adequado</span></h4>
+                        </div>
+
+                        <div class="col-md-6 col-xs-12 ">
+                          <h1>226,4 <i class="fa fa-star-o"></i></h1>
+                          <a href="sae_piloto_escolas.html">
+                            <h3>Matemática <i class="fa fa-link"></i></h3>
+                          </a>
+                          <h4><span class="label" style="background-color: #92d1b8;">Básico</span></h4>
+                        </div>
+
+                      </div>
+
+                      <div class="divider"></div>
+
+                      <div class="row">
+
+                        <div class="col-md-12 col-xs-12 ">
+                          <div style="margin-bottom: 17px">
+                            <span class="chart" data-percent="82.9">
+                              <span class="percent"></span>
+                            </span>
+                          </div>
+                          <h2 class="name_title">141/170 - Alunos</h2>
+                          <h4>Participação</h4>
+                          <h1>12</h1>
+                          <h4>Escolas <i class="fa fa-graduation-cap"></i></h4>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12 ">
+                  <div class="x_panel">
+
+                    <div class="x_title">
+                      <h2>3° Ano Ensino Médio</h2>
+                      <div class="clearfix"></div>
+                    </div>
+
+                    <div class="x_content" style="text-align: center;">
+
+                      <div class="row">
+
+                        <div class="col-md-6 col-xs-12 ">
+                          <h1>246,1,3 <i class="fa fa-star-half-o"></i></h1>
+                          <h3>Português</h3>
+                          <h4><span class="label" style="background-color: #57bf9a;">Básico</span></h4>
+                        </div>
+
+                        <div class="col-md-6 col-xs-12 ">
+                          <h1>201,7 <i class="fa fa-star-o"></i></h1>
+                          <h3>Matemática</h3>
+                          <h4><span class="label" style="background-color: #d3ebde;">Abaixo do Básico</span></h4>
+                        </div>
+
+                      </div>
+
+                      <div class="divider"></div>
+
+                      <div class="row">
+
+                        <div class="col-md-12 col-xs-12 ">
+                          <div style="margin-bottom: 17px">
+                            <span class="chart" data-percent="73,8">
+                              <span class="percent"></span>
+                            </span>
+                          </div>
+                          <h2 class="name_title">96/130 - Alunos</h2>
+                          <h4>Participação</h4>
+                          <h1>9</h1>
+                          <h4>Escolas <i class="fa fa-graduation-cap"></i></h4>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock content %}
+
+  {% block javascripts %}
+  {{ block.super }}
+  <!-- Chart.js -->
+  <script src="/static/vendors/Chart.js/dist/Chart.min.js"></script>
+  <!-- jQuery Sparklines -->
+  <script src="/static/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+  <!-- easy-pie-chart -->
+  <script src="/static/vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+  {% endblock javascripts %}
