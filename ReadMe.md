@@ -12,7 +12,7 @@
 
 ##### Run the code
     cd gentelella
-    python manage.py runserver 
+    ./manage.py runserver 
     
 ##### Behold!
 Go to http://localhost:8000/
